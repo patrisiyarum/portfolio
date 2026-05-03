@@ -1,16 +1,17 @@
-import Hero from "./components/Hero";
-import Projects from "./components/Projects";
-import Photos from "./components/Photos";
-import Nav from "./components/Nav";
+import type { Metadata } from "next";
+import Nav from "../components/Nav";
+import About from "../components/About";
 
-export default function Page() {
+export const metadata: Metadata = {
+  title: "about · patrisiya rumyantseva",
+};
+
+export default function AboutPage() {
   return (
     <>
       <Nav />
-      <main className="flex-1">
-        <Hero />
-        <Projects />
-        <Photos />
+      <main className="flex-1 pt-12">
+        <About />
       </main>
       <footer className="border-t border-border py-8 px-6 text-sm text-muted">
         <div className="max-w-5xl mx-auto flex flex-wrap gap-2 justify-between">

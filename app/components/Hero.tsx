@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="px-6 pt-24 pb-32 sm:pt-36 sm:pb-44">
@@ -22,12 +24,12 @@ export default function Hero() {
           >
             see what I&apos;ve built →
           </a>
-          <a
-            href="#contact"
+          <Link
+            href="/contact"
             className="px-5 py-3 border border-border rounded-full hover:border-foreground transition"
           >
             say hi
-          </a>
+          </Link>
         </div>
       </div>
     </section>

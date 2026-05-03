@@ -9,19 +9,19 @@ export default function Nav() {
         </Link>
         <ul className="flex gap-6 text-muted">
           <li>
-            <a href="#projects" className="hover:text-foreground transition">
+            <Link href="/#projects" className="hover:text-foreground transition">
               projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#about" className="hover:text-foreground transition">
+            <Link href="/about" className="hover:text-foreground transition">
               about
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#contact" className="hover:text-foreground transition">
+            <Link href="/contact" className="hover:text-foreground transition">
               contact
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
