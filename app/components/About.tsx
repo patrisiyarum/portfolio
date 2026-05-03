@@ -20,11 +20,11 @@ export default function About() {
 
   return (
     <section id="about" className="px-6 py-24 border-t border-border">
-      <div className="max-w-5xl mx-auto grid gap-12 lg:grid-cols-[1fr_2fr]">
-        <div className="space-y-8">
-          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight">
-            about<span className="text-accent">.</span>
-          </h2>
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-12">
+          about<span className="text-accent">.</span>
+        </h2>
+        <div className="grid gap-12 lg:grid-cols-[1fr_2fr] items-start">
           {photo && (
             <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden border border-border bg-foreground/5">
               <Image
@@ -37,8 +37,7 @@ export default function About() {
               />
             </div>
           )}
-        </div>
-        <div className="space-y-6 text-lg leading-relaxed max-w-2xl">
+          <div className="space-y-6 text-lg leading-relaxed max-w-2xl">
           <p>
             My first love is my computer, specifically{" "}
             <span className="font-mono text-accent">Claude Code</span>.
@@ -54,6 +53,7 @@ export default function About() {
             : whether that&apos;s making cancer care more accessible to
             patients worldwide, or just saving you 30 minutes out of your day.
           </p>
+          </div>
         </div>
       </div>
     </section>
