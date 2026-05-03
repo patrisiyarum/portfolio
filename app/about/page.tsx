@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Nav from "../components/Nav";
 import About from "../components/About";
+import Photos from "../components/Photos";
 
 export const metadata: Metadata = {
   title: "about · patrisiya rumyantseva",
@@ -12,6 +13,7 @@ export default function AboutPage() {
       <Nav />
       <main className="flex-1 pt-12">
         <About />
+        <Photos />
       </main>
       <footer className="border-t border-border py-8 px-6 text-sm text-muted">
         <div className="max-w-5xl mx-auto flex flex-wrap gap-2 justify-between">
