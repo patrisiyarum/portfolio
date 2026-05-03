@@ -1,10 +1,43 @@
+import Image from "next/image";
+import fs from "node:fs";
+import path from "node:path";
+
+function firstPhoto(): string | null {
+  const dir = path.join(process.cwd(), "public", "photos");
+  try {
+    const file = fs
+      .readdirSync(dir)
+      .filter((f) => /\.(jpe?g|png|webp|avif)$/i.test(f))
+      .sort()[0];
+    return file ? `/photos/${file}` : null;
+  } catch {
+    return null;
+  }
+}
+
 export default function About() {
+  const photo = firstPhoto();
+
   return (
     <section id="about" className="px-6 py-24 border-t border-border">
       <div className="max-w-5xl mx-auto grid gap-12 lg:grid-cols-[1fr_2fr]">
-        <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight">
-          about<span className="text-accent">.</span>
-        </h2>
+        <div className="space-y-8">
+          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight">
+            about<span className="text-accent">.</span>
+          </h2>
+          {photo && (
+            <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden border border-border bg-foreground/5">
+              <Image
+                src={photo}
+                alt="patrisiya"
+                fill
+                sizes="(max-width: 1024px) 100vw, 33vw"
+                className="object-cover"
+                priority
+              />
+            </div>
+          )}
+        </div>
         <div className="space-y-6 text-lg leading-relaxed max-w-2xl">
           <p>
             My first love is my computer, specifically{" "}
