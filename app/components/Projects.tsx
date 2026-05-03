@@ -29,19 +29,19 @@ const projects: Project[] = [
   {
     title: "langmatch",
     year: "2025",
-    blurb: "language exchange for GT modern languages",
+    blurb: "Tinder-style language exchange for GT × Namseoul",
     description:
-      "A language-exchange matchmaker built for the Georgia Tech School of Modern Languages. Matches learners with conversation partners by target language, proficiency, and interests, with a SQL-backed profile and matching system. Live and in use under the modlangs.gatech.edu domain.",
+      "A language-exchange platform built for Georgia Tech students studying abroad at Namseoul University in Korea. Tinder-style swipe interface that helps them meet and befriend Korean partners who want to practice English, with profiles, interest tags, and a SQL-backed matching system. Live under the modlangs.gatech.edu domain.",
     tags: ["Web", "SQL", "Matching", "Deployed"],
     href: "https://languagematchmaker.modlangs.gatech.edu/home",
   },
   {
     title: "flightline",
     year: "2025",
-    blurb: "Delta-themed flight ops project",
+    blurb: "ML system for Delta airlines crew comments",
     description:
-      "A flight-operations / aviation web app exploring how route, schedule, and status data can be made legible at a glance. Live deployment, visit to interact.",
-    tags: ["Web", "Aviation", "Deployed"],
+      "A full-stack ML system I built for Delta Air Lines to replace a manual 10-hour-per-week task: classifying thousands of airline crew comments about on-board meal quality and service into actionable categories. Pipeline ingests raw comments, runs them through a fine-tuned classifier, and surfaces categorized results in a dashboard the operations team can act on.",
+    tags: ["Full-Stack", "ML", "NLP", "Delta"],
     href: "https://deltaflightline.onrender.com/",
   },
 ];
