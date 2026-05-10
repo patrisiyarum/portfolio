@@ -26,7 +26,7 @@ export default function About() {
         </h2>
         <div className="grid gap-12 lg:grid-cols-[1fr_2fr] items-start">
           {photo && (
-            <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden border border-border bg-foreground/5">
+            <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden border border-border bg-foreground/5 mt-[0.35em]">
               <Image
                 src={photo}
                 alt="patrisiya"

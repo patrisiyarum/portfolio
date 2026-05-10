@@ -24,7 +24,7 @@ const projects: Project[] = [
     description:
       "Computer-vision pipeline that scans images and video for fire-safety compliance: fire extinguishers, smoke and fire, emergency-exit signs, and common code violations, using a YOLOv8 detector trained on Roboflow datasets. Deploys as a web app for fast, automated walkthroughs.",
     tags: ["YOLOv8", "PyTorch", "Computer Vision", "Roboflow"],
-    href: "https://flash-inspector-ai-1.onrender.com/",
+    href: "https://github.com/patrisiyarum/Flash-Inspector-AI",
   },
   {
     title: "langmatch",
